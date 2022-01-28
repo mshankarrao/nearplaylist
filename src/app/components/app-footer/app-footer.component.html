@@ -1,0 +1,19 @@
+<footer class="footer">
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <input autofocus type="text" placeholder="need some play recommendation..."
+               (keyup.enter)="onPlayListAdd()"
+               [(ngModel)]="playlist">
+      </div>
+    </div>
+
+    <div class="col-auto">
+      <div class="form-group">
+        <button class="button button-primary" (click)="onPlayListAdd()">
+          Type Artist Name
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
